@@ -9,8 +9,8 @@ SECRET_KEY = (
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "localhost",
-    "127.0.0.1",
+    "www.ivanz.pythonanywhere.com",
+    "ivanz.pythonanywhere.com",
 ]
 
 

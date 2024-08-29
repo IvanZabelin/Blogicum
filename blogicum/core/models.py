@@ -1,6 +1,9 @@
 from django.db import models
 
 
+MAX_NAME_LENGTH: int = 256
+
+
 class BaseModel(models.Model):
     """Базовая модель."""
 
@@ -22,7 +25,7 @@ class BaseTitle(models.Model):
     """Базовая модель заголовка."""
 
     title = models.CharField(
-        max_length=256,
+        max_length=MAX_NAME_LENGTH,
         verbose_name="Заголовок",
     )
 

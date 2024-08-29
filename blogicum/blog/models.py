@@ -4,13 +4,14 @@ from django.contrib.auth import get_user_model
 from core.models import BaseModel, BaseTitle
 
 User = get_user_model()
+MAX_NAME_LENGTH: int = 256
 
 
 class Location(BaseModel):
     """Местоположение."""
 
     name = models.CharField(
-        max_length=256,
+        max_length=MAX_NAME_LENGTH,
         verbose_name="Название места",
     )
 
